@@ -1,0 +1,263 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html{
+    font-family: "Poppins" ,sans-serif;
+}
+.img{
+    width: 100%;
+}
+
+
+body{
+    
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./img/main-background.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.list-none{
+    list-style: none;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-1-5{
+    gap: 24px;
+}
+.gap-2{
+    gap: 2rem;
+}
+
+/* work start  */
+
+.main-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading h1{
+    font-family: "Poppins" ,sans-serif;
+    font-size: 65px;
+    line-height: 80px;
+    color: #fff;
+
+}
+.header-span{
+    background: linear-gradient(97.34deg, #9B5EFF 0%, #EF775D 102.87%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.heading p{
+    font-family: "Poppins" ,sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    margin: 100px 0 150px 0;
+}
+.input{
+    background: linear-gradient(97.34deg, #9B5EFF 0%, #EF775D 102.87%);
+    border-radius: 50px;
+    max-width: 250px;
+    display: flex;
+    padding: 9px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    margin: auto;
+
+}
+.input:hover{
+    background: linear-gradient(97.34deg, #EF775D 0%, #9B5EFF 102.87%);
+}
+.input button{
+    /* width: 70%; */
+    font-family: "Poppins" ,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 10px;
+    background: none;
+    cursor: pointer;
+}
+.input a{
+    /* width: 30%; */
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+
+/* popup start  */
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.5); */
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+    
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 420px;
+    padding: 30px 30px;
+    background-color: #12143E;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    z-index: 9;
+    top: -70%;
+    
+    transform: translate(-50%,-50%);
+}
+.showloginform{
+    top: 52%;
+}
+
+
+.loginform span{
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 30px;
+    top: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(97.34deg, #9B5EFF 0%, #EF775D 102.87%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+/* .. */
+.loginform p{
+    font-size: 20px ;
+    margin-bottom: 30px;
+    background-image: linear-gradient(97.34deg, #9B5EFF 0%, #EF775D 102.87%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+label{
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+input[type=text],input[type=password]{
+    all: unset;
+    width: 310px;
+    height: 38px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #212355;
+    box-sizing: border-box;
+    /* outline: .1px solid #f0f0f0; */
+    
+}
+
+
+input[type=text]{
+    margin-bottom: 15px;
+}
+
+/* input[type=submit]{
+    background-color: #625cff;
+    color: #ffffff;
+    font-size: 14px;
+    width: 317px;
+    height: 44px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: #5853e4;
+    cursor: pointer;
+} */
+
+input[type=submit]{
+    background: linear-gradient(97.34deg, #9B5EFF 0%, #EF775D 102.87%);
+    color: #ffffff;
+    font-size: 14px;
+    width: 317px;
+    height: 44px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background: linear-gradient(97.34deg, #EF775D 0%, #9B5EFF 102.87%);  
+}
+.password{
+    display: inline-block;
+    background: linear-gradient(97.34deg, #9B5EFF 50%, #EF775D 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 12px;
+    text-align: end;
+    width: 100%;
+    margin: -10px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+form {
+    padding: 20px;
+}
